@@ -1,0 +1,49 @@
+﻿body {
+    font-family: Algerian
+}
+
+label {
+    font-size: 20px;
+    color: dodgerblue;
+    width: 150px;
+    display: inline-block
+}
+
+button {
+    font-size: 20px;
+    color: darkseagreen;
+}
+
+textarea {
+    font-size: 20px
+}
+
+img {
+    display: block;
+    max-width: 25%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+h1 {
+    margin: auto;
+    width: 50%;
+    border: 10px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
