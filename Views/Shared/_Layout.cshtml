@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link href="~/css/main.css" rel="stylesheet" />
+    <link href="~/css/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="~/img/download (1).png">
+</head>
+
+<body class="bg-dark-subtle">
+
+    <nav>
+        <a asp-controller="Blah" asp-action="Index">Home</a>
+        <a asp-controller="Blah" asp-action="GradeCalc">Grade Calculator</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <script src="~/js/lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="~/css/bootstrap-5.3.0-alpha1-dist/js/bootstrap.js"></script>
+
+</body>
+</html>
