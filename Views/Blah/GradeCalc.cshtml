@@ -1,0 +1,43 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model GradeCalcModel;
+
+<h2>Grade Calculator: Enter your percent score as a whole number (ex. 92)</h2>
+<form id="gCalc" method="post" class="form-control" asp-controller="Blah" asp-action="GradeCalc">
+    <label class="form-label">Assignments</label>
+    <input class="form-control" id="assignments" asp-for="Assignments" />
+    @Html.ValidationMessageFor(m => m.Assignments)
+    <br />
+    <label class="form-label">Group Projects</label>
+    <input class="form-control" id="groupProjects" asp-for="GroupProjects" />
+    @Html.ValidationMessageFor(m => m.GroupProjects)
+    <br />
+    <label class="form-label">Quizzes</label>
+    <input class="form-control" id="quizzes" asp-for="Quizzes" />
+    @Html.ValidationMessageFor(m => m.Quizzes)
+    <br />
+    <label class="form-label">Midterm Exam</label>
+    <input class="form-control" id="midterm" asp-for="Midterm" />
+    @Html.ValidationMessageFor(m => m.Midterm)
+    <br />
+    <label class="form-label">Final Exam</label>
+    <input class="form-control" id="final" asp-for="Final" />
+    @Html.ValidationMessageFor(m => m.Final)
+    <br />
+    <label class="form-label">INTEX</label>
+    <input class="form-control" id="intex" asp-for="INTEX" />
+    @Html.ValidationMessageFor(m => m.INTEX)
+    <br />
+    <input id="btnSend" type="submit" value="Calculate Grade" class="btn btn-primary" />
+    <br />
+    <textarea id="letterGrade" value="" class="form-control"></textarea>
+
+    <div asp-validation-summary="All"></div>
+
+</form>
+
+<script src="~/js/gradeCalc.js"></script>
